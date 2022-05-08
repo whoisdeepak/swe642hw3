@@ -13,9 +13,7 @@ public class FormService {
 	private FormRepository repo;
 	
 	public List<Form> getAllSubmissions() {
-		List<Form> submissions = new ArrayList<>();
-		repo.findAll().forEach(submissions::add);
-		return submissions;
+		return repo.findAll();
 	}
 	
 	

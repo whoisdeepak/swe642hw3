@@ -53,6 +53,7 @@ export class FormComponent {
   constructor(private http: HttpClient, public router: Router) { }
 
   onClickingSubmit(data: any) {
+    
     this.fetchSelectedItems()
 
     for (let i of this.selectedItemsList) {
